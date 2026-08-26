@@ -1,0 +1,18 @@
+{
+  "name": "wyeworks",
+  "description": "Claude Code plugins built at WyeWorks.",
+  "owner": {
+    "name": "WyeWorks",
+    "url": "https://github.com/wyeworks"
+  },
+  "plugins": [
+    {
+      "name": "accountable-review",
+      "source": {
+        "source": "github",
+        "repo": "wyeworks/accountable-review"
+      },
+      "description": "Turns a pull request into a published review map a reviewer can read before judging the change."
+    }
+  ]
+}
