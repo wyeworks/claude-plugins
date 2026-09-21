@@ -5,8 +5,7 @@ WyeWorks. This repository holds no plugin code — only
 [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json), which points at the repository
 each plugin lives in.
 
-Both this catalogue and the plugins it lists are **private** for now, so installing requires git
-access to the WyeWorks organisation.
+This catalogue and the plugins it lists are public, so installing needs nothing but Claude Code.
 
 ## Use it
 
@@ -63,6 +62,9 @@ claude plugin validate .
 single source of truth, and it wins when both are set. Pin `ref` or `sha` in the entry only when a
 release deliberately needs holding back.
 
-Worth testing the entry before it is public: `claude plugin marketplace add` accepts a local path, so
+Worth testing an entry before pushing it: `claude plugin marketplace add` accepts a local path, so
 you can add this directory, install from it, confirm the plugin's commands resolve, then
 `claude plugin marketplace remove wyeworks`.
+
+A new entry has to point at a **public** repository. A public catalogue listing a private plugin
+fails at install rather than at `marketplace add`, which is the confusing end to fail at.
