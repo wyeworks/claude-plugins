@@ -36,9 +36,13 @@ Scopes are `user` (default, every project), `project` (checked in, shared with c
 
 ## What is listed
 
-| Plugin | Repository | What it does |
-|---|---|---|
-| `accountable-review` | [wyeworks/accountable-review](https://github.com/wyeworks/accountable-review) | Turns a pull request into a published review map a reviewer can read before judging the change |
+| Plugin | Version | Repository | What it does |
+|---|---|---|---|
+| `accountable-review` | ![](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fwyeworks%2Faccountable-review%2Fmain%2F.claude-plugin%2Fplugin.json&query=%24.version&label=&color=informational) | [wyeworks/accountable-review](https://github.com/wyeworks/accountable-review) | Turns a pull request into a published review map a reviewer can read before judging the change |
+
+The version is read from each plugin's own `.claude-plugin/plugin.json` on `main` when the page
+renders, for the reason the entries carry no `version` key: a number typed here is a number that is
+wrong from the next release until someone remembers this table.
 
 ## Adding a plugin
 
